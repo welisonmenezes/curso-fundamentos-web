@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed</title>
+    <style>
+        img {
+            max-width: 200px;
+        }
+        iframe,
+        object,
+        embed {
+            width: 500px;
+            height: 400px;
+        }
+        video {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home</h1>
+    <ul>
+        <li>
+            <a href="pages/contato.html" target="" title="Karoline está com fome">Contato</a>
+        </li>
+        <li>
+            <a href="pages/sobre.html" target="janela-pro-sobre">Sobre</a>
+        </li>
+        <li>
+            <a href="pages/pages2/teste.html">Teste</a>
+        </li>
+        <li>
+            <a href="https://www.google.com/">Vá para o Google</a>
+        </li>
+    </ul>
+    <hr>
+    <a href="https://www.google.com/">
+        <img src="medias/natureza.jpg" alt="Imagem de natureza">
+    </a>
+    <hr>
+    <iframe name="janela-pro-sobre"></iframe>
+    <hr>
+    <iframe src="https://www.youtube.com/embed/HTkAO4wx2uw"></iframe>
+    <hr>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236256.2012455119!2d-43.01942007508396!3d-22.29680340263913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9847e1ddc05303%3A0xea9ad59ed5709c35!2sTeres%C3%B3polis%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1592092624006!5m2!1spt-BR!2sbr"></iframe>
+    <hr>
+    <video muted controls poster="medias/natureza.jpg">
+        <source src="medias/video.avi" type="video/avi">
+        <source src="medias/video.mp4" type="video/mp4">
+    </video>
+    <hr>
+    <audio controls muted>
+        <source src="medias/audio.mp3" type="audio/mpeg">
+        <source src="medias/audio.ogv" type="audio/ogv">
+    </audio>
+    <hr>
+    <object data="medias/sample.pdf" type="application/pdf">Texto alternativo</object>
+    <embed src="medias/sample.pdf" type="application/pdf">
+</body>
+</html>
