@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form {
+            color: #333;
+        }
+        textarea {
+            width: 50%;
+            height: 200px;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border-style: dashed;
+            border-width: 1px;
+        }
+        legend {
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="GET" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Digite seu nome</label>
+                <input type="text" name="nome" id="nome" disabled>
+            </div>
+            <div>
+                <label for="sobrenome">Digite seu sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" pattern="">
+            </div>
+            <div>
+                <label for="senha">Digite sua Senha</label>
+                <input type="password" placeholder="até 8 carcteres" name="senha" id="senha" required>
+            </div>
+            <div>
+                <label for="email">Digite seu e-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <div>
+                <input type="tel" placeholder="Digite seu Telefone" name="telefone" maxlength="14" minlength="8" readonly value="9999999">
+            </div>
+            <div>
+                <input type="number" placeholder="Digite sua idade" name="idade" value="33" max="65" min="18">
+            </div>
+            <div>
+                <input type="date" placeholder="Data de nascimento" name="data_nasc" min="10/10/2020">
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="sexo" value="M">
+                    Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="F">
+                    Feminino
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Complete seu Cadastro</legend>
+            <div>
+                <label>
+                    <input type="radio" name="formacao" value="1"> 1º Grau
+                </label>
+                <label>
+                    <input type="radio" name="formacao" value="2" checked> 2º Grau
+                </label>
+                
+                <input type="radio" name="formacao" value="3" id="formacao_2"> <label for="formacao_2">Superior</label>
+            </div>
+            <div>
+                <input type="checkbox" name="cor" value="preto"> Preto
+                <input type="checkbox" name="cor" value="azul" checked> Azul
+                <input type="checkbox" name="cor" value="vermelho"> Vermelho
+            </div>
+            <div>
+                <input type="checkbox" name="termos" value="S"> Aceite os Termos
+            </div>
+            <div>
+                <input type="file" name="curriculo" accept="application/pdf" multiple>
+            </div>
+            <div>
+                <input type="range" min="1" max="10" value="10" name="porcentagem">
+            </div>
+            <div>
+                <textarea name="mensagem"></textarea>
+            </div>
+            <div>
+                <label for="mes">Selecione o Mês</label>
+                <select name="mes" id="mes">
+                    <option value="01">Janeiro</option>
+                    <option value="02" selected>Fevereiro</option>
+                    <option value="03">Março</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Maio</option>
+                </select>
+            </div>
+        </fieldset>
+        
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </div>
+        <input type="hidden" value="Valor Secreto" name="secreto">
+    </form>
+</body>
+</html>
